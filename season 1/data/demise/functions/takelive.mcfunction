@@ -1,0 +1,1 @@
+scoreboard players operation @s death += demise one

@@ -1,0 +1,1 @@
+scoreboard players operation demise netherOpen = demise false

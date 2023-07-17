@@ -1,0 +1,1 @@
+tellraw @p[team=logs] {"text": "§0[§r§5Limited Life§r§0]§r Reloaded"}
