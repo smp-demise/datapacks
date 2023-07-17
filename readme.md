@@ -2,6 +2,9 @@
 
 [Season 1](#season-1)
 
+Start any of the seasons <br>
+`/function demise:start`
+
 ## Season 1
 
 To open the end <br>
