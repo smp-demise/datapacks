@@ -1,0 +1,1 @@
+scoreboard players operation @a time += demise one

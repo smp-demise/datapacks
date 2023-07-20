@@ -15,6 +15,7 @@ execute as @p[team=] run team join 1
 
 scoreboard objectives add lives dummy
 scoreboard objectives add death deathCount
+scoreboard objectives add time dummy "Play Time (m)"
 scoreboard objectives add Dkills minecraft.killed:minecraft.ender_dragon
 
 scoreboard objectives add one dummy
@@ -29,9 +30,11 @@ scoreboard objectives add netherOpen dummy
 scoreboard objectives setdisplay belowName lives
 scoreboard objectives setdisplay sidebar lives
 
-scoreboard players set @a lives 3
+scoreboard players set @a time 0
 scoreboard players set @a death 0
 scoreboard players set @a Dkills 0
+
+scoreboard players set @a lives 3
 
 scoreboard players set demise one 1
 scoreboard players set demise two 2
@@ -53,3 +56,5 @@ team modify dead friendlyFire false
 
 effect clear @a saturation
 gamerule doDaylightCycle true
+
+schedule function demise:addtime 60s
